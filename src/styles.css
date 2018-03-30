@@ -106,16 +106,18 @@ html {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+@media only screen and (max-width: 1000px) {
+  html {
+    font-size: 9.7px;
+  }
+}
 @media only screen and (max-width: 770px) {
   html {
     font-size: 8px;
   }
-  .activity__section {
-    width: 45rem;
-  }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 640px) {
   .App {
     display: none;
   }
