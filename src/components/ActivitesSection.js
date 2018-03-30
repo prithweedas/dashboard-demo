@@ -15,8 +15,7 @@ const ActivitiesSection = () => {
 
 const styles = {
   container: {
-    position: 'absolute',
-    width: '60%',
+    width: '45rem',
     left: 0,
     top: 0,
     height: '100%',
