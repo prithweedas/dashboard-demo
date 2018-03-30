@@ -6,6 +6,13 @@
   --blue: #1976d2;
 }
 
+* {
+  margin: 0;
+}
+
+html {
+  font-size: 12px;
+}
 .spinner::after,
 .spinner::before {
   content: '';
@@ -40,8 +47,8 @@
 .total__funds::before {
   content: '$';
   position: absolute;
-  font-size: 20px;
-  top: 10px;
+  font-size: 2rem;
+  top: 0.5rem;
   font-weight: 600;
   left: 0;
 }
@@ -57,12 +64,12 @@
 
 .increment__rate::before {
   content: '+';
-  left: -10px;
+  left: -1rem;
 }
 
 .increment__rate::after {
   content: '%';
-  top: 0;
+  top: 1rem;
   right: -1.1rem;
 }
 
@@ -74,4 +81,42 @@
 
 .button:hover {
   transform: translate(0, -4px) scale(1.05);
+}
+
+.small__screen {
+  display: none;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  background-color: var(--off-white);
+  position: relative;
+}
+
+.small__screen > p {
+  font-size: 3rem;
+  color: var(--blue);
+  width: 70vw;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  display: block;
+  height: 50%;
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+@media only screen and (max-width: 770px) {
+  html {
+    font-size: 8px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .App {
+    display: none;
+  }
+  .small__screen {
+    display: block;
+  }
 }

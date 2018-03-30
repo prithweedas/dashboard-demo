@@ -25,10 +25,15 @@ class App extends Component {
         </div>
       )
     return (
-      <div style={styles.app} className="App">
-        <SideBar />
-        <NavBar user={this.state.userData} />
-        <DashBoard />
+      <div>
+        <div style={styles.app} className="App">
+          <SideBar />
+          <NavBar user={this.state.userData} />
+          <DashBoard />
+        </div>
+        <div className="small__screen">
+          <p>Device width needs to be greater that 600px </p>
+        </div>
       </div>
     )
   }

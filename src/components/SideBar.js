@@ -23,10 +23,10 @@ const styles = {
   sidebar: {
     position: 'absolute',
     left: 0,
-    top: '4rem',
+    top: '5rem',
     bottom: 0,
     backgroundColor: 'white',
-    width: '4rem',
+    width: '5rem',
     zIndex: 1,
     borderRight: '1px solid rgba(0,0,0,0.1)'
   }

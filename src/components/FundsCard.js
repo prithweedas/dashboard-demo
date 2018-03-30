@@ -26,15 +26,15 @@ const FundsCard = ({ totalFund, deposite, increment }) => {
 const styles = {
   container: {
     position: 'absolute',
-    width: '25%',
-    height: '30%',
-    padding: '5px',
+    width: '20rem',
+    height: '15rem',
+    padding: '.5rem',
     backgroundColor: 'white',
-    borderRadius: '5px',
+    borderRadius: '.5rem',
     boxShadow: `2px 2px 5px 0 rgba(0,0,0,0.3),
                 -2px 2px 5px 0 rgba(0,0,0,0.3)`,
-    top: '5%',
-    right: '5%'
+    top: '3rem',
+    right: '3rem'
   },
   total: {
     fontSize: '3rem',
@@ -42,22 +42,24 @@ const styles = {
     margin: 0,
     color: '#444',
     position: 'absolute',
-    top: '5%',
-    left: '20px',
-    paddingLeft: '10px'
+    top: '2rem',
+    left: '2rem',
+    paddingLeft: '1rem'
   },
   increment: {
     position: 'absolute',
     color: '#1976d2',
     fontWeight: '600',
-    fontSize: '1.1rem',
-    top: '5%',
-    right: '20%'
+    fontSize: '1.5rem',
+    margin: 0,
+    top: '2rem',
+    right: '2.5rem',
+    paddingTop: '1rem'
   },
   deposite: {
     color: '#444',
     position: 'absolute',
-    left: '20px',
+    left: '2rem',
     fontWeight: '500',
     bottom: '45%'
   },
@@ -65,11 +67,10 @@ const styles = {
     position: 'absolute',
     color: 'white',
     backgroundColor: '#1976d2',
-    height: '40px',
-    width: '60%',
-    minWidth: '60%',
-    paddingLeft: '5px',
-    paddingRight: '5px',
+    height: '3rem',
+    width: '12rem',
+    paddingLeft: '.5rem',
+    paddingRight: '.5rem',
     borderRadius: '20px',
     display: 'flex',
     flexDirection: 'row',
@@ -83,12 +84,12 @@ const styles = {
     transition: 'all 300ms'
   },
   text: {
-    marginLeft: '5px',
+    marginLeft: '.5rem',
     fontWeight: '500'
   },
   arrow: {
-    height: '30px',
-    width: '30px',
+    height: '2rem',
+    width: '2rem',
     backgroundColor: 'rgba(0,0,0,0.2)',
     borderRadius: '50%',
     display: 'flex',

@@ -24,8 +24,8 @@ const styles = {
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
-    marginTop: 10,
-    marginBottom: 10,
+    marginTop: '1rem',
+    marginBottom: '1rem',
     cursor: 'pointer'
   }
 }

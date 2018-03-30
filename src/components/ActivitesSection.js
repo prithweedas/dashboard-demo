@@ -24,8 +24,9 @@ const styles = {
   },
   heading: {
     display: 'block',
-    marginLeft: '5%',
-    marginBottom: 0
+    marginLeft: '2rem',
+    marginBottom: '2rem',
+    marginTop: '2rem'
   }
 }
 

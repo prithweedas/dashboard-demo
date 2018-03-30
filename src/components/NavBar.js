@@ -37,15 +37,15 @@ const styles = {
     left: 0,
     right: 0,
     backgroundColor: 'white',
-    height: '4rem',
+    height: '5rem',
     zIndex: 1,
     borderBottom: '1px solid rgba(0,0,0,0.1)'
   },
   sidebarMenuIcon: {
     ...position,
     left: 0,
-    height: '4rem',
-    width: '4rem',
+    height: '5rem',
+    width: '5rem',
     backgroundColor: 'white',
     color: '#444',
     fontSize: '2rem',
@@ -57,15 +57,15 @@ const styles = {
   profileMenu: {
     ...position,
     right: 0,
-    height: '4rem',
-    width: '12rem',
+    height: '5rem',
+    width: '15rem',
     backgroundColor: 'white',
     borderLeft: '1px solid rgba(0,0,0,0.1)',
     ...centerWithFlex
   },
   profileImage: { width: '2rem', height: '2rem', margin: 10 },
   userName: {
-    fontSize: '1rem',
+    fontSize: '1.3rem',
     fontWeight: '600',
     color: '#444'
   },

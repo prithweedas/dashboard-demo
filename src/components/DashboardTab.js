@@ -20,23 +20,24 @@ const styles = {
   tab: {
     display: 'flex',
     flexDirection: 'row',
-    marginLeft: '5%'
+    marginLeft: '2rem'
   },
   tabItem: {
+    fontSize: '1.3rem',
     color: '#95959f',
     fontWeight: '500',
-    marginRight: '30px'
+    marginRight: '3rem'
   },
   devider: {
     position: 'relative',
-    marginLeft: '5%',
-    height: '2px',
+    marginLeft: '2rem',
+    height: '.2rem',
     width: '90%',
     backgroundColor: 'rgba(0,0,0,0.3)'
   },
   activeDevider: {
-    height: '2px',
-    width: '20%',
+    height: '.2rem',
+    width: '5.5rem',
     backgroundColor: '#1976d2'
   }
 }
