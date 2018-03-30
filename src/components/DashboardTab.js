@@ -26,7 +26,8 @@ const styles = {
     fontSize: '1.3rem',
     color: '#95959f',
     fontWeight: '500',
-    marginRight: '3rem'
+    marginRight: '3rem',
+    marginBottom: '1rem'
   },
   devider: {
     position: 'relative',

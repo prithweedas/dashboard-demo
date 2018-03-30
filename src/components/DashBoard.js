@@ -17,7 +17,7 @@ const styles = {
     position: 'relative',
     marginLeft: '5rem',
     marginTop: '5rem',
-    backgroundColor: '#eee'
+    backgroundColor: '#f7f7f7'
   }
 }
 export default DashBoard
