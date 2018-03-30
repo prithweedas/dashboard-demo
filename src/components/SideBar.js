@@ -1,7 +1,22 @@
 import React from 'react'
+import {
+  faHome,
+  faUser,
+  faCog,
+  faFolder
+} from '@fortawesome/fontawesome-free-solid/'
+
+import Icon from './Icon'
 
 const Sidebar = () => {
-  return <div style={styles.sidebar} />
+  return (
+    <div style={styles.sidebar}>
+      <Icon icon={faHome} active />
+      <Icon icon={faUser} />
+      <Icon icon={faFolder} />
+      <Icon icon={faCog} />
+    </div>
+  )
 }
 
 const styles = {

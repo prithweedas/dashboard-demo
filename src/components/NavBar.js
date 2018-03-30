@@ -1,24 +1,20 @@
 import React from 'react'
+import FontAwesomeIcon from '@fortawesome/react-fontawesome'
+import { faBars, faAngleDown } from '@fortawesome/fontawesome-free-solid/'
 
 const NavBar = ({ user, userImage }) => {
   console.log(user)
   return (
     <div style={styles.navbar}>
       <div style={styles.sidebarMenuIcon}>
-        <img
-          src={require('../assets/menu.png')}
-          style={{ height: '50%', width: '50%' }}
-          alt="menu icon"
-        />
+        <FontAwesomeIcon icon={faBars} />
       </div>
       <div style={styles.profileMenu}>
         <img src={user.image} alt="profile pic" style={styles.profileImage} />
         <p style={styles.userName}>{user.name}</p>
-        <img
-          style={styles.downArrow}
-          alt="down arrow"
-          src={require('../assets/downarrow.png')}
-        />
+        <div style={styles.downArrow}>
+          <FontAwesomeIcon icon={faAngleDown} />
+        </div>
       </div>
     </div>
   )
@@ -51,6 +47,10 @@ const styles = {
     height: '4rem',
     width: '4rem',
     backgroundColor: 'white',
+    color: '#444',
+    fontSize: '2rem',
+    fontWeight: '200',
+    cursor: 'pointer',
     borderRight: '1px solid rgba(0,0,0,0.1)',
     ...centerWithFlex
   },
@@ -66,13 +66,12 @@ const styles = {
   profileImage: { width: '2rem', height: '2rem', margin: 10 },
   userName: {
     fontSize: '1rem',
-    fontWeight: '600'
+    fontWeight: '600',
+    color: '#444'
   },
   downArrow: {
-    height: '1rem',
-    width: '1rem',
     marginLeft: 5,
-    marginTop: 5
+    color: '#444'
   }
 }
 

@@ -11,9 +11,12 @@ class App extends Component {
     super(props)
     this.state = {}
   }
+
+  // This is to simulate network fetch
   componentDidMount() {
     setTimeout(() => this.setState({ userData: UserData }), 500)
   }
+
   render() {
     if (!!!this.state.userData)
       return (
@@ -49,7 +52,7 @@ const styles = {
     top: '50%',
     transform: 'translate(-50%,-50%)',
     borderRadius: '50%',
-    border: '5px solid rgba(0,0,0,0.4)'
+    border: '5px solid #c0c0c0'
   }
 }
 
