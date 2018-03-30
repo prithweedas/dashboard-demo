@@ -21,7 +21,7 @@ const Sidebar = () => {
 
 const styles = {
   sidebar: {
-    position: 'absolute',
+    position: 'fixed',
     left: 0,
     top: '5rem',
     bottom: 0,

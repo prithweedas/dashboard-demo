@@ -32,7 +32,7 @@ class App extends Component {
           <DashBoard />
         </div>
         <div className="small__screen">
-          <p>Device width needs to be greater that 600px </p>
+          <p>Device width needs to be greater than 640px </p>
         </div>
       </div>
     )

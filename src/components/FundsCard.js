@@ -25,7 +25,7 @@ const FundsCard = ({ totalFund, deposite, increment }) => {
 
 const styles = {
   container: {
-    position: 'relative',
+    position: 'fixed',
     float: 'right',
     width: '20rem',
     height: '15rem',
