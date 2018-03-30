@@ -61,7 +61,7 @@ const styles = {
     color: '#444',
     position: 'absolute',
     left: '2rem',
-    fontWeight: '500',
+    fontWeight: '600',
     bottom: '45%'
   },
   button: {
@@ -82,7 +82,8 @@ const styles = {
     textDecoration: 'none',
     boxShadow: `2px 2px 5px 0 rgba(25, 118, 210, 0.3),
                 -2px 2px 5px 0 rgba(25, 118, 210, 0.3)`,
-    transition: 'all 300ms'
+    transition: 'all 300ms',
+    cursor: 'pointer'
   },
   text: {
     marginLeft: '.5rem',
