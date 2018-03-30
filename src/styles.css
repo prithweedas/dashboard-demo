@@ -110,6 +110,9 @@ html {
   html {
     font-size: 8px;
   }
+  .activity__section {
+    width: 45rem;
+  }
 }
 
 @media only screen and (max-width: 600px) {

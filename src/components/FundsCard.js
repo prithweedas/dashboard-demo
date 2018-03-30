@@ -25,7 +25,8 @@ const FundsCard = ({ totalFund, deposite, increment }) => {
 
 const styles = {
   container: {
-    position: 'absolute',
+    position: 'relative',
+    float: 'right',
     width: '20rem',
     height: '15rem',
     padding: '.5rem',
@@ -33,8 +34,8 @@ const styles = {
     borderRadius: '.5rem',
     boxShadow: `2px 2px 5px 0 rgba(0,0,0,0.3),
                 -2px 2px 5px 0 rgba(0,0,0,0.3)`,
-    top: '3rem',
-    right: '3rem'
+    top: '8rem',
+    right: '2rem'
   },
   total: {
     fontSize: '3rem',
