@@ -27,15 +27,14 @@ const styles = {
   container: {
     position: 'absolute',
     width: '25%',
-    minWidth: '300px',
     height: '30%',
-    padding: '10px',
+    padding: '5px',
     backgroundColor: 'white',
     borderRadius: '5px',
     boxShadow: `2px 2px 5px 0 rgba(0,0,0,0.3),
                 -2px 2px 5px 0 rgba(0,0,0,0.3)`,
     top: '5%',
-    right: '7%'
+    right: '5%'
   },
   total: {
     fontSize: '3rem',
@@ -43,7 +42,7 @@ const styles = {
     margin: 0,
     color: '#444',
     position: 'absolute',
-    top: '10px',
+    top: '5%',
     left: '20px',
     paddingLeft: '10px'
   },
@@ -52,7 +51,7 @@ const styles = {
     color: '#1976d2',
     fontWeight: '600',
     fontSize: '1.1rem',
-    top: '10px',
+    top: '5%',
     right: '20%'
   },
   deposite: {
