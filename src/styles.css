@@ -120,3 +120,7 @@ html {
     display: block;
   }
 }
+
+.portfolio__item:hover {
+  transform: scale(1.1);
+}

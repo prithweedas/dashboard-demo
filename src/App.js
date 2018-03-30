@@ -46,7 +46,6 @@ const styles = {
     bottom: 0,
     left: 0,
     right: 0,
-    overflowY: 'scroll',
     fontFamily: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif"
   },
   spinner: {

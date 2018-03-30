@@ -14,12 +14,13 @@ const DashBoard = () => {
 
 const styles = {
   container: {
+    height: '100vh',
     position: 'absolute',
     top: '5rem',
     left: '5rem',
     bottom: 0,
     right: 0,
-    backgroundColor: '#fafafa'
+    backgroundColor: 'pink'
   }
 }
 export default DashBoard
