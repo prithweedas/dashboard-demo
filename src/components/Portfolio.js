@@ -58,7 +58,8 @@ const styles = {
     justifyContent: 'space-around',
     alignItems: 'center',
     width: '100%',
-    height: '3rem'
+    height: '3rem',
+    marginTop: '1rem'
   },
   listHeaderItem: {
     flex: 1,
