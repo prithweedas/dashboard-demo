@@ -19,11 +19,7 @@ class App extends Component {
 
   render() {
     if (!!!this.state.userData)
-      return (
-        <div className="spinner" style={styles.spinner}>
-          <p />
-        </div>
-      )
+      return <div className="spinner" style={styles.spinner} />
     return (
       <div>
         <div style={styles.app} className="App">
