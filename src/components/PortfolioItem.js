@@ -2,29 +2,38 @@ import React from 'react'
 
 import RandomColor from '../utils/RangomColor'
 
-const PortfolioItem = ({ data }) => {
-  const randomColor = RandomColor()
-  return (
-    <div className="portfolio__item" style={styles.container}>
-      <div style={styles.type}>
-        <div
-          style={{
-            ...styles.icon,
-            backgroundColor: randomColor
-          }}
-        >
-          {data.type[0]}
+class PortfolioItem extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      color: RandomColor()
+    }
+  }
+
+  render() {
+    const { data } = this.props
+    return (
+      <div className="portfolio__item" style={styles.container}>
+        <div style={styles.type}>
+          <div
+            style={{
+              ...styles.icon,
+              backgroundColor: this.state.color
+            }}
+          >
+            {data.type[0]}
+          </div>
+          <p>{data.type}</p>
         </div>
-        <p>{data.type}</p>
+        <div style={styles.date}>
+          <p>{data.date}</p>
+        </div>
+        <div className="value" style={styles.value}>
+          <p>$ {data.value}</p>
+        </div>
       </div>
-      <div style={styles.date}>
-        <p>{data.date}</p>
-      </div>
-      <div className="value" style={styles.value}>
-        <p>$ {data.value}</p>
-      </div>
-    </div>
-  )
+    )
+  }
 }
 
 const styles = {
@@ -60,12 +69,12 @@ const styles = {
   },
   icon: {
     display: 'inline-block',
-    fontWeight: 'normal',
+    fontWeight: 'bold',
     lineHeight: 1,
     padding: '1.2rem 1.4rem',
     backgroundColor: 'white',
     borderRadius: '50%',
-    color: 'white',
+    color: 'rgba(0,0,0,0.25)',
     margin: '.5rem'
   }
 }
