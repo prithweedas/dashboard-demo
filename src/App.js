@@ -19,7 +19,7 @@ class App extends Component {
     setTimeout(() => this.setState({ userData: UserData }), 500)
   }
 
-  sideBarHandel = () => {
+  sideBarToggel = () => {
     this.setState(state => ({ sidebarActive: !state.sidebarActive }))
   }
 
@@ -30,7 +30,7 @@ class App extends Component {
       <div>
         <div style={styles.app} className="App">
           <SideBar active={this.state.sidebarActive} />
-          <NavBar onBarPress={this.sideBarHandel} user={this.state.userData} />
+          <NavBar onBarPress={this.sideBarToggel} user={this.state.userData} />
           <DashBoard />
         </div>
         <div className="small__screen">
