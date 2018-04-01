@@ -2,10 +2,10 @@ import React from 'react'
 import FontAwesomeIcon from '@fortawesome/react-fontawesome'
 import { faBars, faAngleDown } from '@fortawesome/fontawesome-free-solid/'
 
-const NavBar = ({ user, userImage }) => {
+const NavBar = ({ user, userImage, onBarPress }) => {
   console.log(user)
   return (
-    <div style={styles.navbar}>
+    <div onClick={onBarPress} style={styles.navbar}>
       <div style={styles.sidebarMenuIcon}>
         <FontAwesomeIcon icon={faBars} />
       </div>

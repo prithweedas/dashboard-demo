@@ -26,7 +26,8 @@ const styles = {
     justifyContent: 'center',
     marginTop: '1rem',
     marginBottom: '1rem',
-    cursor: 'pointer'
+    cursor: 'pointer',
+    position: 'relative'
   }
 }
 export default Icon

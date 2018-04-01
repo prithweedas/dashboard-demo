@@ -40,8 +40,14 @@ html {
   }
 }
 
-.active__icon {
-  border-right: 2px solid var(--blue);
+.active__icon::after {
+  content: '';
+  height: 100%;
+  width: 2px;
+  background-color: #1976d2;
+  position: absolute;
+  right: 0;
+  border-right: -2px solid var(--blue);
 }
 
 .total__funds::before {

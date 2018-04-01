@@ -9,12 +9,18 @@ import './styles.css'
 class App extends Component {
   constructor(props) {
     super(props)
-    this.state = {}
+    this.state = {
+      sidebarActive: true
+    }
   }
 
   // This is to simulate network fetch
   componentDidMount() {
     setTimeout(() => this.setState({ userData: UserData }), 500)
+  }
+
+  sideBarHandel = () => {
+    this.setState(state => ({ sidebarActive: !state.sidebarActive }))
   }
 
   render() {
@@ -23,8 +29,8 @@ class App extends Component {
     return (
       <div>
         <div style={styles.app} className="App">
-          <SideBar />
-          <NavBar user={this.state.userData} />
+          <SideBar active={this.state.sidebarActive} />
+          <NavBar onBarPress={this.sideBarHandel} user={this.state.userData} />
           <DashBoard />
         </div>
         <div className="small__screen">
@@ -42,6 +48,7 @@ const styles = {
     bottom: 0,
     left: 0,
     right: 0,
+    backgroundColor: '#f7f7f7',
     fontFamily: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif"
   },
   spinner: {

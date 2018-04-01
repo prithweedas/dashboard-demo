@@ -8,9 +8,9 @@ import {
 
 import Icon from './Icon'
 
-const Sidebar = () => {
+const Sidebar = ({ active }) => {
   return (
-    <div style={styles.sidebar}>
+    <div style={{ ...styles.sidebar, left: active ? 0 : '-5rem' }}>
       <Icon icon={faHome} active />
       <Icon icon={faUser} />
       <Icon icon={faFolder} />
@@ -22,12 +22,12 @@ const Sidebar = () => {
 const styles = {
   sidebar: {
     position: 'fixed',
-    left: 0,
     top: '5rem',
     bottom: 0,
     backgroundColor: 'white',
     width: '5rem',
     zIndex: 1,
+    transition: 'all 300ms',
     borderRight: '1px solid rgba(0,0,0,0.1)'
   }
 }
